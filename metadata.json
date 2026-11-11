@@ -1,0 +1,6 @@
+{
+  "name": "ShieldNet Hub",
+  "description": "Multi-Tenant Property Commerce, Sales Intelligence & Estate Operations Platform connecting developers, agents, buyers, and estate operations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

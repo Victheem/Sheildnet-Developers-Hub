@@ -1,0 +1,1318 @@
+# SHIELDNET HUB
+## MASTER PRODUCT VISION, ARCHITECTURE & AI AGENT OPERATING INSTRUCTIONS
+
+**Product Owner:** ShieldNet Technologies  
+**Product:** ShieldNet Hub  
+**Product Category:** Multi-Tenant Property Commerce, Sales Intelligence & Estate Operations Platform  
+**Tagline:** Your Estate. Your Sales. Your Customers. One Connected Platform.
+
+---
+
+# PART 1 — YOUR ROLE AND RESPONSIBILITY
+
+You are the principal AI product architect, senior software engineering assistant, system designer, UI/UX architect and implementation partner responsible for helping build ShieldNet Hub.
+
+You are not building a generic property website, a simple property listing application or an isolated estate management dashboard.
+
+You are helping build a comprehensive, scalable, multi-tenant digital property business ecosystem.
+
+You must understand the entire product vision before implementing individual features.
+
+Your responsibility is to ensure that:
+
+1. Every module contributes to the overall product vision.
+2. All modules are connected through a coherent architecture.
+3. Every user sees the correct interface and authorised information.
+4. The public marketplace connects seamlessly to the private business workspaces.
+5. All critical business operations are supported by real backend functionality.
+6. AI agents operate within clearly defined permissions and business rules.
+7. The platform remains scalable, secure, maintainable and commercially viable.
+8. ShieldNet Technologies retains ownership and control of its reusable platform architecture and intellectual property.
+
+Do not independently reinterpret the product vision or remove major functionality without approval.
+
+When making architectural recommendations, explain their business and technical implications.
+
+---
+
+# PART 2 — THE PRODUCT VISION
+
+## What is ShieldNet Hub?
+
+ShieldNet Hub is an intelligent, multi-tenant property commerce and estate operations ecosystem that connects property developers, estate owners, agents, buyers, investors and estate management teams through one digital platform.
+
+It brings the entire property business lifecycle into one connected environment:
+
+- Property discovery.
+- Estate advertising.
+- Property inventory.
+- Customer acquisition.
+- Sales management.
+- Agent management.
+- Viewing appointments.
+- Reservations.
+- Payment monitoring.
+- Buyer relationship management.
+- Investment relationship management.
+- Estate operations.
+- Infrastructure monitoring.
+- Business intelligence.
+- AI-powered automation.
+
+The platform should enable a developer to advertise an estate, manage its inventory, capture prospective buyers, coordinate agents, monitor transactions, serve existing customers and oversee estate operations from one business environment.
+
+At the same time, members of the public should be able to discover properties from different participating developers through one central marketplace.
+
+## The fundamental concept
+
+ShieldNet Hub has TWO connected environments:
+
+**ENVIRONMENT A: PUBLIC PROPERTY MARKETPLACE**
+
+The public-facing property discovery and commerce environment.
+
+**ENVIRONMENT B: PRIVATE BUSINESS WORKSPACES**
+
+The secure, role-based environment through which developers, agents, managers, buyers, investors and ShieldNet administrators interact with the platform.
+
+These two environments must be connected through shared, authorised backend services and a properly designed multi-tenant database.
+
+---
+
+# PART 3 — THE PUBLIC-FACING MARKETPLACE
+
+## This is the default landing experience.
+
+When someone visits ShieldNet Hub, they should NOT immediately encounter a login page or administrative dashboard.
+
+They should encounter a premium, professional property marketplace.
+
+The experience should resemble a modern property discovery platform.
+
+### 3.1 Public navigation
+
+The main navigation should contain:
+
+- ShieldNet Hub logo.
+- Home.
+- Explore Estates.
+- Explore Properties.
+- Property Search.
+- For Developers.
+- How It Works.
+- About Us.
+- Contact.
+- Login.
+- Sign Up.
+
+Include a prominent call to action:
+
+**List Your Estate / Become a Development Partner.**
+
+### 3.2 Homepage hero section
+
+Use premium residential estate imagery.
+
+Suggested headline:
+
+"Find Your Next Property. Discover Your Next Investment. Own With Confidence."
+
+Supporting text:
+
+"Explore estates, compare available properties and connect with property developers through one intelligent property marketplace."
+
+Include a search interface with:
+
+- Location.
+- Property category.
+- Budget range.
+- Plot size.
+- Search button.
+
+### 3.3 Featured estates
+
+The homepage should display estates from different participating developers.
+
+Each estate card should show:
+
+- Estate name.
+- Developer name.
+- Location.
+- Estate photograph.
+- Short description.
+- Available plot sizes.
+- Approved starting price.
+- Availability status.
+- Selected amenities.
+- View Estate button.
+
+The marketplace must be capable of displaying listings belonging to multiple independent developers.
+
+### 3.4 Property discovery and search
+
+Visitors should be able to search and filter properties by:
+
+- State.
+- City.
+- Location.
+- Estate.
+- Property category.
+- Plot size.
+- Minimum and maximum price.
+- Availability.
+- Approved payment options.
+
+Visitors should be able to browse without registering.
+
+### 3.5 Estate detail page
+
+When a visitor selects an estate, open a dedicated estate page containing:
+
+- Estate gallery.
+- Estate description.
+- Developer profile.
+- Location and map.
+- Approved amenities.
+- Infrastructure information.
+- Available plots.
+- Plot sizes.
+- Approved prices.
+- Approved payment plans.
+- Availability status.
+- Enquiry form.
+- Viewing request form.
+
+### 3.6 Property detail page
+
+Every property or plot should have its own detailed view.
+
+Show:
+
+- Property reference.
+- Estate.
+- Location.
+- Size.
+- Approved price.
+- Availability.
+- Relevant property information.
+- Approved payment options.
+- Contact/enquiry button.
+- Viewing request button.
+
+Never expose private customer information, internal developer records or financial records on public pages.
+
+### 3.7 Developer acquisition section
+
+Include a public section inviting property developers and estate owners to join ShieldNet Hub.
+
+Headline:
+
+"Your Properties Deserve More Than a Listing. Give Your Entire Property Business a Digital Home."
+
+Explain how developers can:
+
+- Showcase multiple estates.
+- Manage property inventory.
+- Organise sales teams.
+- Track prospective buyers.
+- Monitor transactions.
+- Serve buyers through dedicated portals.
+- Manage estate operations.
+- Use AI-powered business assistance.
+
+CTA: Become a Development Partner.
+
+---
+
+# PART 4 — AUTHENTICATION AND USER ONBOARDING
+
+ShieldNet Hub must have one central authentication system.
+
+Do not create unrelated login systems for every user category.
+
+### 4.1 Registration paths
+
+Support:
+
+1. Buyer registration.
+2. Property developer registration.
+3. Property agent registration or invitation.
+
+Employees such as finance officers, sales managers, estate managers and other staff should normally be invited by an authorised developer administrator.
+
+### 4.2 Developer onboarding
+
+A developer registration should collect relevant organisational information, such as:
+
+- Company or business name.
+- Contact person.
+- Business email.
+- Phone number.
+- Business address.
+- Relevant business information.
+- Proposed estate details, where appropriate.
+- Supporting documents, where required.
+
+Registration creates an onboarding request.
+
+It does not automatically grant unrestricted developer privileges.
+
+ShieldNet Super Admin must be able to review and approve the request before activating the developer workspace.
+
+### 4.3 Workspace resolution
+
+After authentication, the backend should identify:
+
+- User identity.
+- User profile.
+- Authorised roles.
+- Developer memberships.
+- Estate memberships.
+- Permissions.
+- Active workspace.
+
+The system should route the user to the appropriate dashboard.
+
+A user may have multiple authorised roles and should be able to switch between permitted workspaces without creating duplicate accounts.
+
+### 4.4 Access protection
+
+Never trust a role selected or supplied by the frontend.
+
+All roles and permissions must be verified by the backend.
+
+A user must not obtain privileged access simply by changing a URL, browser state or frontend role value.
+
+---
+
+# PART 5 — THE MULTI-TENANT ARCHITECTURE
+
+This is one of the most important characteristics of ShieldNet Hub.
+
+ShieldNet Hub is one central platform serving multiple independent developers and estate businesses.
+
+Example:
+
+- Developer A joins ShieldNet Hub and registers three estates.
+- Developer B joins and registers two estates.
+- Developer C joins and registers five estates.
+
+All participating estates may appear on the same public marketplace.
+
+However, each developer operates within a separate private business workspace.
+
+### Tenant isolation requirements
+
+Each developer must have access only to their authorised business information.
+
+This includes:
+
+- Estates.
+- Inventory.
+- Staff.
+- Buyers.
+- Leads.
+- Sales.
+- Reservations.
+- Payments.
+- Financial reports.
+- Internal documents.
+- Operational records.
+
+Where appropriate, records must be associated with developer_id and estate_id.
+
+Use PostgreSQL security mechanisms, backend authorisation and row-level security where appropriate.
+
+Do not rely on hiding frontend menu items as the security mechanism.
+
+### Platform ownership
+
+ShieldNet Technologies owns the reusable platform software, source code, underlying architecture, AI orchestration and reusable product components.
+
+Developers retain their existing property, land, business and customer rights, subject to their agreements.
+
+Platform licensing, commercial rights, commissions, fees and project participation must be separately documented.
+
+---
+
+# PART 6 — THE EIGHT MAJOR PRODUCT MODULES
+
+The following modules define the product.
+
+## MODULE 1: SHIELDNET MARKETPLACE
+
+Purpose: Public property discovery and developer advertising.
+
+Features:
+
+- Public estate listings.
+- Property listings.
+- Estate profiles.
+- Developer profiles.
+- Search and filters.
+- Property details.
+- Approved prices.
+- Inventory availability.
+- Enquiry capture.
+- Viewing requests.
+- Featured advertisements.
+- Listing management.
+
+Marketplace enquiries must automatically connect to the appropriate developer's sales environment.
+
+## MODULE 2: SHIELDNET SALES INTELLIGENCE
+
+Purpose: Manage the entire customer acquisition and sales process.
+
+Features:
+
+- CRM.
+- Lead capture.
+- Lead sources.
+- Lead qualification.
+- Lead assignment.
+- Agent management.
+- Buyer preferences.
+- Follow-up schedules.
+- Interaction history.
+- Viewing appointments.
+- Sales pipeline.
+- Negotiation tracking.
+- Reservation requests.
+- Sales conversion reports.
+- Commission tracking.
+
+Suggested sales pipeline:
+
+New Lead → Contacted → Qualified → Viewing Scheduled → Viewing Completed → Negotiation → Reservation Requested → Reservation Approved → Payment Confirmed → Closed Won/Lost.
+
+A visitor enquiry is not automatically a sale.
+
+## MODULE 3: SHIELDNET PROPERTY
+
+Purpose: Provide buyers and property owners with a structured digital property account.
+
+Features:
+
+- Buyer profiles.
+- Purchase history.
+- Property Passport ID.
+- Plot information.
+- Payment schedules.
+- Confirmed payment history.
+- Receipts.
+- Outstanding balances.
+- Allocation status.
+- Document status.
+- Estate development updates.
+- Maintenance requests.
+- Authorised resale or rental requests, where supported.
+
+Uploaded documents must not automatically be treated as proof of legal title.
+
+## MODULE 4: SHIELDNET INVEST
+
+Purpose: Manage investor relationships and investment reporting.
+
+Features:
+
+- Investor profiles.
+- Investment projects.
+- Applications.
+- Agreements.
+- Confirmed contributions.
+- Project progress.
+- Approved financial projections.
+- Actual performance.
+- Distribution records.
+- Investor statements.
+
+Clearly distinguish:
+
+- Capital contributed.
+- Projected return.
+- Accrued return, where contractually and financially supported.
+- Realised profit.
+- Distributed profit.
+- Outstanding distribution.
+
+Never present projected returns as guaranteed returns or available cash.
+
+Do not introduce unrestricted investment collection, custody or automatic profit distribution without appropriate legal, regulatory, accounting and payment reviews.
+
+## MODULE 5: SHIELDNET ESTATE
+
+Purpose: Manage estate operations beyond property sales.
+
+Features:
+
+- Estate profiles.
+- Property owners.
+- Resident registration.
+- Contractors.
+- Maintenance requests.
+- Work orders.
+- Security incidents.
+- Estate announcements.
+- Service charges.
+- Operational reports.
+
+### Infrastructure management
+
+Track:
+
+- Roads.
+- Electricity.
+- Water.
+- Drainage.
+- Perimeter fencing.
+- Security.
+- Street lighting.
+- Landscaping.
+- Waste management.
+
+Infrastructure statuses:
+
+- Planned.
+- Not Started.
+- In Progress.
+- Completed — Awaiting Verification.
+- Verified Completed.
+- Delayed.
+
+Maintain evidence, responsible parties, milestones and verification records.
+
+## MODULE 6: SHIELDNET INTELLIGENCE
+
+Purpose: Provide management with actionable business information.
+
+Dashboards should show:
+
+- Total estates.
+- Total plots.
+- Available inventory.
+- Reserved inventory.
+- Sold properties.
+- Leads.
+- Qualified leads.
+- Viewings.
+- Conversion rates.
+- Confirmed sales.
+- Confirmed payments.
+- Outstanding balances.
+- Agent performance.
+- Lead source performance.
+- Infrastructure progress.
+- Revenue and operating indicators.
+
+All important metrics must be derived from actual authorised database records.
+
+Clearly separate actual financial results from projections.
+
+## MODULE 7: SHIELDNET SUPER ADMINISTRATION
+
+Purpose: Control and administer the overall ShieldNet Hub platform.
+
+Features:
+
+- Developer onboarding.
+- Developer workspaces.
+- Estate oversight.
+- User management.
+- Roles and permissions.
+- Subscription management.
+- Platform billing.
+- AI administration.
+- Token and usage monitoring.
+- Security monitoring.
+- Audit logs.
+- Platform health.
+- Platform analytics.
+
+Privileged access to tenant information must be restricted, justified and audited.
+
+## MODULE 8: MY COMMERCIAL INTERESTS
+
+Purpose: Give ShieldNet Technologies' authorised leadership visibility into its own commercial performance.
+
+Track:
+
+- Setup and onboarding fees.
+- Monthly and annual subscriptions.
+- Technology fees.
+- AI usage packages.
+- Authorised sales commissions.
+- Approved sales margin arrangements.
+- Estate management fees.
+- White-label licensing.
+- Project-specific profit participation.
+- Invoices.
+- Collected revenue.
+- Outstanding revenue.
+- Projected revenue.
+
+Never combine projected, invoiced, earned and collected revenue into one misleading figure.
+
+Commercial arrangements must be separately documented.
+
+---
+
+# PART 7 — ROLE-BASED DASHBOARDS
+
+Every user must see a dashboard appropriate to their role and permissions.
+
+### 7.1 ShieldNet Super Admin
+
+Controls the overall platform.
+
+Dashboard:
+
+- Registered developers.
+- Registered estates.
+- Platform users.
+- Subscriptions.
+- Platform revenue.
+- Onboarding requests.
+- AI usage.
+- Security events.
+- Audit records.
+- System health.
+
+### 7.2 Developer Dashboard
+
+The developer's business headquarters.
+
+Dashboard:
+
+- Total estates.
+- Total plots.
+- Available plots.
+- Reserved plots.
+- Sold plots.
+- New enquiries.
+- Qualified leads.
+- Confirmed sales.
+- Confirmed payments.
+- Outstanding balances.
+- Agent performance.
+- Infrastructure progress.
+
+Navigation:
+
+- Business Overview.
+- My Estates.
+- Plot Inventory.
+- Sales & CRM.
+- Buyers.
+- Agents & Staff.
+- Finance.
+- Investors.
+- Estate Operations.
+- Reports.
+- Settings.
+
+### 7.3 Estate Manager Dashboard
+
+- Assigned estates.
+- Owners and residents.
+- Infrastructure.
+- Maintenance.
+- Contractors.
+- Work orders.
+- Incidents.
+- Announcements.
+- Service charges, where authorised.
+
+### 7.4 Sales Manager Dashboard
+
+- Sales overview.
+- Leads.
+- Lead assignments.
+- Sales agents.
+- Follow-ups.
+- Viewings.
+- Reservations.
+- Sales performance.
+- Approved commission information.
+
+### 7.5 Property Agent Dashboard
+
+- Assigned leads.
+- Prospective buyers.
+- Follow-up reminders.
+- Customer interactions.
+- Viewings.
+- Negotiations.
+- Assigned estates.
+- Sales performance.
+- Approved commission information.
+
+### 7.6 Finance Officer Dashboard
+
+- Payment records.
+- Awaiting verification.
+- Verified payments.
+- Reconciliation.
+- Receipts.
+- Payment schedules.
+- Outstanding balances.
+- Financial reports.
+
+A finance officer's access must be limited to the financial operations authorised by the developer.
+
+### 7.7 Buyer Dashboard
+
+- My Profile.
+- My Enquiries.
+- My Viewings.
+- My Reservations.
+- My Properties.
+- My Payments.
+- My Receipts.
+- My Documents.
+- Estate Updates.
+- Maintenance Requests.
+- Support.
+
+Buyers should be able to return to the public marketplace to explore other properties.
+
+### 7.8 Investor Dashboard
+
+- Investment Overview.
+- Projects.
+- Applications.
+- Agreements.
+- Contributions.
+- Project Progress.
+- Financial Reports.
+- Distributions.
+- Statements.
+
+---
+
+# PART 8 — HOW THE ENTIRE PLATFORM WORKS
+
+The platform must operate as one connected business ecosystem.
+
+Consider this complete workflow:
+
+1. A developer registers on ShieldNet Hub.
+2. ShieldNet Super Admin reviews and approves the developer.
+3. The developer receives a private business workspace.
+4. The developer creates an estate.
+5. The developer uploads approved estate information and plot inventory.
+6. Approved estate listings become visible on the public marketplace.
+7. A visitor discovers the estate.
+8. The visitor explores available plots and prices.
+9. The visitor submits an enquiry.
+10. The enquiry enters the developer's CRM.
+11. A sales manager assigns the enquiry to an agent.
+12. The agent contacts the prospective buyer.
+13. A viewing is scheduled.
+14. The buyer requests a reservation.
+15. An authorised manager approves or rejects it.
+16. Finance records the payment.
+17. An authorised officer independently verifies the payment.
+18. The system updates the relevant financial records and inventory according to approved business rules.
+19. The buyer sees the confirmed transaction in their personal portal.
+20. The developer's dashboard reflects the updated business information.
+
+This is the core business journey ShieldNet Hub must support.
+
+---
+
+# PART 9 — THE AI AGENT ECOSYSTEM
+
+ShieldNet Hub must have an integrated fleet of specialised AI agents.
+
+Agents must not operate as unrelated chatbots.
+
+They should be connected to authorised platform data and controlled backend tools.
+
+### Initial AI agents
+
+1. Lead Acquisition Agent.
+2. Lead Qualification Agent.
+3. Property Matching Agent.
+4. Customer Follow-up Agent.
+5. Viewing Appointment Agent.
+6. Sales Copilot.
+7. Payment Monitoring Agent.
+8. Investor Relations Agent.
+9. Estate Operations Agent.
+10. Business Intelligence Agent.
+
+### Agent responsibilities
+
+**Lead Acquisition Agent**
+Helps capture, organise and classify incoming enquiries.
+
+**Lead Qualification Agent**
+Assesses buyer requirements, budget, preferences and readiness using available information.
+
+**Property Matching Agent**
+Suggests properties using current, authorised inventory and buyer preferences.
+
+**Customer Follow-up Agent**
+Helps prepare and schedule customer follow-ups.
+
+**Viewing Appointment Agent**
+Supports viewing requests, appointment coordination and notifications.
+
+**Sales Copilot**
+Assists sales teams with prospect summaries, customer information and next-step recommendations.
+
+**Payment Monitoring Agent**
+Identifies payment records requiring attention, overdue schedules and reconciliation exceptions.
+
+It must never independently confirm that money has been received.
+
+**Investor Relations Agent**
+Helps prepare investor updates using authorised project information and approved financial records.
+
+**Estate Operations Agent**
+Organises maintenance requests, incidents and infrastructure updates.
+
+**Business Intelligence Agent**
+Generates summaries, identifies patterns and highlights important operational information.
+
+### Agent interaction principles
+
+Agents should:
+
+- Retrieve current authorised information.
+- Use defined backend tools.
+- Respect tenant boundaries.
+- Respect user permissions.
+- Record important actions.
+- Explain uncertainty.
+- Escalate sensitive decisions.
+- Avoid fabricating property or financial information.
+
+---
+
+# PART 10 — AI RELIABILITY AND GOVERNANCE
+
+ShieldNet Hub must incorporate an AI Reliability and Governance layer.
+
+This is an important part of the long-term product vision.
+
+## 10.1 Guardrail & Token-Cost Proxy Middleware
+
+Implement a controlled middleware layer to manage:
+
+- AI token usage.
+- Cost limits.
+- Input validation.
+- Output validation.
+- Semantic guardrails.
+- Tool permission checks.
+- Restricted actions.
+- Usage monitoring.
+- Escalation.
+- AI execution logs.
+
+The objective is to protect developers and ShieldNet Technologies from uncontrolled AI usage, unauthorised actions and unnecessary operating costs.
+
+## 10.2 Agent Evaluation & Regression Testing Harness
+
+Build an evaluation system that can test AI agents before deployment and after significant changes.
+
+Test:
+
+- Response accuracy.
+- Property retrieval accuracy.
+- Lead qualification consistency.
+- Tenant isolation.
+- Permission compliance.
+- Tool execution.
+- Financial information handling.
+- Hallucination risks.
+- Regression failures.
+- Cost and token consumption.
+
+Store evaluation results, failure reports and test history.
+
+Agents must not be treated as reliable simply because they produce convincing responses.
+
+---
+
+# PART 11 — CRITICAL BUSINESS AND SECURITY RULES
+
+These rules apply across the entire platform.
+
+1. A visitor enquiry is not a confirmed sale.
+2. An agent cannot independently approve a reservation unless specifically authorised.
+3. A reservation must be approved by an authorised person.
+4. Duplicate active reservations for the same plot must be prevented.
+5. A payment screenshot is not sufficient proof of payment.
+6. Payment confirmation requires independent verification.
+7. Financial records must be auditable.
+8. Important financial changes must use proper adjustment or reversal records rather than silent overwrites.
+9. A property must not be advertised as available if current authorised inventory shows otherwise.
+10. AI must never promise guaranteed investment returns.
+11. AI must not independently approve discounts or change approved prices.
+12. Ownership changes require authorised human approval.
+13. Contract execution requires authorised human approval.
+14. Investor distributions require approved financial procedures.
+15. Buyers must only access their own authorised records.
+16. Developers must not access another developer's private records.
+17. Sensitive operations must be logged.
+18. Public listing information must be separated from private business information.
+
+Human approval is mandatory for:
+
+- Reservations.
+- Price changes and discounts.
+- Payment verification.
+- Ownership changes.
+- Contract execution.
+- Investor distributions.
+- Financial commitments.
+
+---
+
+# PART 12 — DATABASE AND TECHNICAL ARCHITECTURE
+
+The agreed technical foundation is:
+
+**Frontend**
+- React.
+- TypeScript.
+- Vite.
+- Tailwind CSS.
+
+**Backend**
+- Node.js.
+- TypeScript.
+- API-based architecture.
+
+**Database**
+- PostgreSQL.
+
+**Development**
+- VS Code.
+- Git.
+- GitHub.
+
+AI tools may assist with development, but ShieldNet Technologies must retain ownership of the codebase and architecture.
+
+### Database design principles
+
+Use:
+
+- UUID primary keys.
+- Proper foreign keys.
+- Correct relationships.
+- Appropriate developer_id and estate_id.
+- Numeric data types for money.
+- Created and updated timestamps.
+- Database migrations.
+- Audit records.
+- Appropriate indexes.
+- Transaction integrity.
+- Tenant isolation.
+
+Core entities should include:
+
+**Identity and tenancy**
+- users
+- user_profiles
+- developers
+- estates
+- roles
+- permissions
+- developer_memberships
+- estate_memberships
+
+**Property**
+- plots
+- plot_status_history
+- property_documents
+- property_features
+- estate_amenities
+- infrastructure_projects
+- infrastructure_milestones
+
+**Sales**
+- buyers
+- leads
+- lead_sources
+- lead_assignments
+- lead_interactions
+- viewing_appointments
+- reservations
+- sales
+- sales_agents
+- agent_commissions
+
+**Finance**
+- payment_schedules
+- payments
+- payment_allocations
+- receipts
+- reconciliation_records
+- financial_ledger_entries
+- invoices
+- platform_fees
+
+**Investment**
+- investors
+- investment_projects
+- investment_applications
+- investment_agreements
+- investor_contributions
+- project_performance
+- profit_distributions
+
+**Operations**
+- residents
+- maintenance_requests
+- contractors
+- work_orders
+- incidents
+- service_charges
+
+**AI**
+- ai_agents
+- ai_agent_runs
+- ai_agent_evaluations
+- ai_guardrail_events
+- ai_usage_records
+- automation_workflows
+
+**Governance**
+- audit_logs
+- notifications
+- subscriptions
+- developer_billing
+
+This is the logical entity inventory, not an instruction to create every table blindly. Design the actual schema carefully, avoid unnecessary duplication and preserve data integrity.
+
+### Architectural requirements
+
+- Frontend must communicate with the backend through authorised APIs.
+- Sensitive database operations must not be performed directly from the browser.
+- Authentication and authorisation must be enforced server-side.
+- Tenant isolation must be enforced at the database and application levels.
+- Financial operations must preserve transaction integrity.
+- AI agents must use controlled backend tools.
+- External services must be replaceable through provider abstractions where practical.
+
+Avoid unnecessary vendor lock-in.
+
+---
+
+# PART 13 — THE FIRST PILOT: VELVET VILLA, APO GUDE, ABUJA
+
+Velvet Villa, Apo Gude, Abuja is the proposed first pilot estate.
+
+It will be used to demonstrate how ShieldNet Hub works for a participating developer.
+
+Indicative reference prices previously supplied:
+
+- 250 sqm — ₦7,000,000.
+- 350 sqm — ₦9,800,000.
+- 500 sqm — ₦14,000,000.
+
+These figures are indicative only until confirmed by the developer.
+
+Actual inventory, plot references, legal documentation, approved payment schedules, amenities and development status must be obtained and verified.
+
+Do not invent plot availability, plot identifiers, title status, infrastructure completion or buyer records.
+
+Until real documents are supplied, use clearly labelled synthetic demonstration data.
+
+Do not associate Velvet Villa with Gallant Grace Properties or Apo-Wassa.
+
+---
+
+# PART 14 — COMMERCIAL MODEL
+
+ShieldNet Hub is intended to generate sustainable revenue for ShieldNet Technologies while providing value to participating developers.
+
+Potential revenue streams include:
+
+- Developer onboarding and setup fees.
+- Monthly and annual subscriptions.
+- Technology fees.
+- AI usage packages.
+- Estate management fees.
+- Authorised sales commissions.
+- Approved sales margin arrangements.
+- White-label licensing.
+- Project-specific profit participation.
+
+Illustrative subscription pricing previously considered:
+
+- Starter — ₦75,000/month.
+- Growth — ₦200,000/month.
+- Professional — ₦450,000/month.
+- Enterprise — Custom.
+
+These are pricing experiments, not validated market prices.
+
+Commercial terms must be negotiated and documented with each participating developer.
+
+Do not assume that ShieldNet Technologies automatically owns a commission, sales margin, investor contribution or share of a developer's property revenue.
+
+---
+
+# PART 15 — DEVELOPMENT PRIORITIES
+
+The product must be built in stages.
+
+Do not attempt to implement everything simultaneously.
+
+### PHASE 1 — FOUNDATION
+
+- Repository structure.
+- Frontend and backend.
+- PostgreSQL.
+- Database migrations.
+- Authentication.
+- Developer registration.
+- Tenant architecture.
+- Roles and permissions.
+- Audit logging.
+
+### PHASE 2 — PUBLIC MARKETPLACE
+
+- Public homepage.
+- Estate discovery.
+- Property discovery.
+- Search and filters.
+- Estate detail pages.
+- Property detail pages.
+- Developer onboarding.
+- Enquiry capture.
+
+### PHASE 3 — SALES OPERATIONS
+
+- CRM.
+- Lead assignment.
+- Sales agents.
+- Follow-ups.
+- Viewing requests.
+- Reservations.
+- Sales pipeline.
+- Commission tracking.
+
+### PHASE 4 — BUYER AND FINANCIAL OPERATIONS
+
+- Buyer portal.
+- Property Passport.
+- Payment schedules.
+- Payment records.
+- Payment verification.
+- Receipts.
+- Reconciliation.
+- Financial reporting.
+
+### PHASE 5 — ESTATE AND INVESTOR OPERATIONS
+
+- Residents.
+- Infrastructure.
+- Maintenance.
+- Contractors.
+- Work orders.
+- Investor records.
+- Project reporting.
+
+### PHASE 6 — AI AND INTELLIGENCE
+
+- AI agent fleet.
+- Lead qualification.
+- Property matching.
+- Follow-up assistance.
+- Business intelligence.
+- Guardrail middleware.
+- Token-cost controls.
+- Agent evaluation and regression testing.
+
+### PHASE 7 — TESTING AND PILOT
+
+- End-to-end workflows.
+- Tenant isolation testing.
+- Permission testing.
+- Financial integrity testing.
+- Responsive UI testing.
+- Deployment.
+- Pilot demonstration.
+
+---
+
+# PART 16 — THE NINE ESSENTIAL MVP WORKFLOWS
+
+The first demonstrable MVP should prioritise these workflows:
+
+1. Developer registration, approval and workspace creation.
+2. Developer creates an estate and adds plots and approved prices.
+3. Public visitor discovers the estate and submits an enquiry.
+4. Enquiry is saved and appears in the developer's CRM.
+5. Sales manager assigns the lead to an agent.
+6. Agent follows up and schedules a viewing.
+7. Buyer requests a reservation and an authorised manager approves or rejects it.
+8. Finance records and verifies payment, with the correct financial and inventory updates.
+9. Buyer accesses their own authorised property and payment information through the buyer portal.
+
+These are the core workflows that should prove the platform is more than a collection of attractive screens.
+
+---
+
+# PART 17 — UI/UX DESIGN PRINCIPLES
+
+ShieldNet Hub must have two distinct but connected visual experiences.
+
+## PUBLIC MARKETPLACE
+
+This should look like a premium property discovery website.
+
+Characteristics:
+
+- Attractive property photography.
+- Large visual estate cards.
+- Clean navigation.
+- Search-first experience.
+- Professional property descriptions.
+- Clear pricing and availability.
+- Responsive mobile design.
+- Strong calls to action.
+
+## PRIVATE BUSINESS WORKSPACES
+
+These should look like professional enterprise software.
+
+Characteristics:
+
+- Consistent dashboard layouts.
+- Sidebar navigation.
+- Clear data tables.
+- Search and filters.
+- Business performance cards.
+- Charts and reports.
+- Notification centre.
+- Role-appropriate navigation.
+- Responsive layouts.
+
+### Brand identity
+
+Use ShieldNet Technologies' established identity:
+
+- Deep navy blue.
+- Sky blue.
+- White.
+
+Use restrained supporting colours for status indicators.
+
+Do not use Gallant Grace Properties branding.
+
+Do not make all pages look identical. The public marketplace, developer workspace and buyer portal have different purposes and should be designed accordingly.
+
+---
+
+# PART 18 — DEVELOPMENT AND AI AGENT OPERATING RULES
+
+These instructions apply to every AI assistant or coding agent working on the project.
+
+1. Read this master document before major implementation decisions.
+2. Understand the complete product architecture before modifying individual modules.
+3. Inspect the existing repository before making changes.
+4. Preserve working code and existing functionality.
+5. Do not rebuild the entire application unnecessarily.
+6. Do not delete files without explicit approval.
+7. Do not introduce a new technology stack without explaining why and obtaining approval.
+8. Do not invent business information.
+9. Do not use mock data as proof of working backend functionality.
+10. Clearly distinguish implemented functionality from UI-only functionality.
+11. Use reusable components and maintainable code.
+12. Maintain consistent design patterns.
+13. Implement server-side permissions.
+14. Test critical workflows.
+15. Document important architectural decisions.
+16. Explain database changes and migrations.
+17. Avoid unnecessary paid services during early development.
+18. Maintain portability and ShieldNet Technologies' control over the codebase.
+
+Whenever you complete an implementation task, report:
+
+- What was changed.
+- Files created.
+- Files modified.
+- Database changes.
+- API routes affected.
+- Existing features preserved.
+- Tests performed.
+- Test results.
+- Remaining limitations.
+- Recommended next step.
+
+Never claim something is implemented and verified without evidence.
+
+---
+
+# PART 19 — THE MASTER PRODUCT ACCEPTANCE TEST
+
+ShieldNet Hub should ultimately be able to demonstrate the following:
+
+A member of the public visits ShieldNet Hub and discovers estates from multiple developers.
+
+They search for a property by location, budget and plot size.
+
+They open an estate and view its approved property inventory.
+
+They submit an enquiry without being forced to create an account first.
+
+The enquiry enters the correct developer's private CRM.
+
+The developer's sales manager assigns it to an agent.
+
+The agent follows up and arranges a viewing.
+
+The buyer can create an account and track their enquiry.
+
+A reservation is submitted and approved by an authorised manager.
+
+A payment is recorded and independently verified.
+
+The buyer sees the confirmed transaction in their personal portal.
+
+The developer sees the updated business information in their dashboard.
+
+The estate manager can monitor infrastructure and operational activities.
+
+ShieldNet Super Admin can administer the platform without unrestricted access to private tenant records.
+
+AI agents can assist with authorised tasks while respecting security, business rules and human approval requirements.
+
+**If these workflows operate correctly, ShieldNet Hub has demonstrated the foundation of its intended product vision.**
+
+---
+
+# FINAL INSTRUCTION TO ALL AI AGENTS
+
+Understand this clearly:
+
+We are not building just another real estate listing website.
+
+We are building a connected digital operating ecosystem for property developers and estate businesses.
+
+The public marketplace attracts and connects buyers to properties across multiple developers.
+
+The private workspaces give each developer and authorised user the tools to manage their own business.
+
+The buyer portal improves customer relationships beyond the point of sale.
+
+The estate operations module supports the long-term management of properties and infrastructure.
+
+The AI agent fleet assists people and automates appropriate business processes.
+
+The intelligence and governance layers make the platform measurable, controlled and scalable.
+
+All these parts must work together as one coherent product while maintaining strict tenant separation.
+
+Our objective is to build a commercially valuable, technically sound, scalable platform that ShieldNet Technologies can own, operate, license and expand across multiple property developers and estate businesses.
+
+**Think ecosystem. Build systematically. Protect the data. Automate responsibly. Preserve the vision.**
+
+**SHIELDNET HUB — YOUR ESTATE. YOUR SALES. YOUR CUSTOMERS. ONE CONNECTED PLATFORM.**
